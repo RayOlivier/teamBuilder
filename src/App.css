@@ -52,9 +52,10 @@ h3{
   border-radius: 4px;
   margin-bottom: 8px;
 }
-.button{
+.addButton{
   background-color: lightskyblue;
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: bold;
   color: whitesmoke;
   border-radius: 4px;
   border:none;
@@ -64,7 +65,17 @@ h3{
   
 }
 
-.button:hover {
+.addButton:hover {
   cursor: pointer;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.23);
+}
+
+.removeButton{
+  background-color: lightskyblue;
+  font-size: 14px;
+  color: whitesmoke;
+  border-radius: 4px;
+  border:none;
+  height: 20px;
+  margin-left: 20px;
 }
