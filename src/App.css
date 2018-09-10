@@ -1,0 +1,32 @@
+body{
+  background: #333;
+  color: whitesmoke;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  display: flex;
+
+}
+
+.title{
+  font-family: Lucida;
+  align-content: center;
+}
+
+/* Inside the components */
+
+.button{
+  background-color: #4fc3f7;
+  font-size: 14px;
+  color: whitesmoke;
+  border-radius: 4px;
+  border:none;
+  height: 30px;
+  width: 130px;
+  align-items: center;
+}
+
+.button:hover {
+  cursor: pointer;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.23);
+}
