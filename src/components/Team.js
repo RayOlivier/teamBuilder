@@ -17,6 +17,7 @@ class Team extends Component {
 
     this.changeInput = this.changeInput.bind(this);
     this.addTeam = this.addTeam.bind(this);
+    this.removePlayer = this.removePlayer.bind(this);
   }
 
   changeInput(e){
@@ -31,11 +32,27 @@ class Team extends Component {
     })
   }
 
+  removePlayer(i){
+    // let benched = e;
+
+    // this.state.teamList.forEach((e,i,arr)=>{
+    //     console.log(e,i, benched)
+    //     if(e===benched){
+    //         this.state.teamList.splice(i,1)
+    //     }
+    // })
+    console.log(i)
+    // this.state.teamList.splice(i,1);
+
+    let newList = this.state.teamList.slice()
+    newList.splice(i,1)
+    this.setState({teamList: newList})
+}
 
   
   render() {
     
-    console.log(this.state);
+    //console.log(this.state);
     
     return (
       <div className="team">
@@ -50,10 +67,13 @@ class Team extends Component {
           add={this.addTeam}/>
         
         <List
-          arr={this.state.teamList} 
+          arr={this.state.teamList}
+          remove={this.removePlayer} 
         />
+        
 
       </div>
+      
     );
   }
 }
